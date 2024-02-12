@@ -1,0 +1,213 @@
+/*Reset*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /*Ocupa solo el tamaño del contenedor*/
+}
+/*'Segoe UI', Tahoma, Geneva, Verdana, sans-serif*/
+/*fuente local
+    @font-face {
+    font-family: "Sobiscuit";
+    src: url(../assets/fonts/Sobiscuit.ttf);
+}*/
+/* Fuente externa*/
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+/*Body style*/
+body{
+    font-family: "Pacifico";
+    background-color: #fffbf2;
+    color: #3b3a3d;
+}
+
+/*header and nav styles*/
+.header{
+    padding: 10px;
+    background-color: #ADF5E2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #fffbf2;
+    position: sticky;
+    top: 0;
+}
+.logo{
+
+    color: #3b3a3d;
+    text-decoration: none;
+    list-style: none;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.header img{
+    width: 50px;
+}
+
+.nav__list{
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+
+}
+.nav__link{
+    text-decoration: none; /*para sacarle el aspecto standar de link*/
+    color: #3b3a3d;
+    font-weight: bold;
+}
+
+
+/*Section and article styles*/
+.hero{
+    text-align: center;
+        /*min-height: 100vh;
+    max-width: 100%;*/ 
+    /*para evitar q se rompa la imagen a cambiar el tamaño de la pag*/
+}
+.hero img{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    overflow: hidden;
+
+}
+.hero h1{
+    font-family: "Pacifico";
+    font-style: italic;
+    font-size: 50px;
+    padding: 30px;
+    margin: 30px;
+} 
+.hero p{
+    font-family: "Pacifico";
+    font-size: large;
+    padding: 10px;
+    margin: 10px;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-evenly;
+    padding: 10px;
+    margin: 70px 10px;
+}
+.line__container{
+    text-align: center;
+    width: 300px;
+    padding: 5px;
+}
+.line__container p{
+    padding: 10px;
+}
+
+/*about us*/
+.hero__container{
+    margin: 30px;
+}
+.hero__card{
+    display: flex;
+}
+.hero__card img{
+    min-width: 40%;
+    max-width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 5%;
+}
+.hero__card__content{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: space-between;
+}
+
+
+
+/*Productos*/
+
+
+/*Galeria*/
+
+.galery_container{
+    background-color: #f0ec8f;
+    display: grid;
+    padding: 20px;
+    gap: 30px;
+    grid-template-columns: repeat(auto-fill, minmax(320px,1fr));
+    grid-auto-rows: minmax(300px, auto);
+    grid-template-areas: dense;
+
+}
+.galery_container img, video{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+/*contacto*/
+.contact{
+    background-color: #bbeee0;
+    width: fit-content;
+    margin: 50px;
+    font-weight: bold;
+    border-radius: 5%;
+}
+
+form{
+    padding: 30px;
+    color: #3b3a3d;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.contact div{
+    margin: 20px 10px;
+}
+
+.buttons{
+    padding: 10px;
+    text-align: end;
+}
+
+
+/*footer styles*/
+#footer{
+    background-color:#ADF5E2;
+    color: #242325;
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+@media(max-width:380px){
+    .header, .nav__list, .hero__card{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .hero__card{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero__card img{
+        width: 100%;
+        object-fit: cover;
+        border-radius: 0%;
+    }
+
+
+    .contact{
+        margin: 0%;
+        border-radius: 0%;
+        background-color: #bbeee0;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+}
