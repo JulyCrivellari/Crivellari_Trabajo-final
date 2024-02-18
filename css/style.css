@@ -16,6 +16,7 @@
 /*Body style*/
 body{
     font-family: "Pacifico";
+    font-display: swap;
     background-color: #fffbf2;
     color: #3b3a3d;
 }
@@ -56,6 +57,11 @@ body{
     text-decoration: none; /*para sacarle el aspecto standar de link*/
     color: #3b3a3d;
     font-weight: bold;
+}
+.nav__list a:hover{
+    color: #fffbf2;
+    transition: 0.2s;
+    font-size: 20px; 
 }
 
 
@@ -129,7 +135,55 @@ body{
 
 
 /*Productos*/
+.product__container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding: 30px;
+    gap: 30px;
+}
 
+.box{
+    width: 90%;
+    background-color: #fffbf2;
+    justify-content: center;
+    padding: 20px;
+    display: flex;
+    gap: 15px;
+    transition: 0.5s;
+    /*flex-wrap: wrap;*/
+}
+.box img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+.box__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    width: 50%;
+}
+
+.box__content ul{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px;
+}
+.box:hover{
+    background-color: #f0ec8f;
+}
+.box:nth-child(even){
+    flex-direction: row-reverse;
+}
+.box:hover:nth-child(even){
+    background-color: #bbeee0;
+}
 
 /*Galeria*/
 
