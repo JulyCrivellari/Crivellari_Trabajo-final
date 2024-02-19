@@ -2,14 +2,9 @@
 *{
     padding: 0;
     margin: 0;
-    box-sizing: border-box; /*Ocupa solo el tamaño del contenedor*/
+    box-sizing: border-box;
 }
-/*'Segoe UI', Tahoma, Geneva, Verdana, sans-serif*/
-/*fuente local
-    @font-face {
-    font-family: "Sobiscuit";
-    src: url(../assets/fonts/Sobiscuit.ttf);
-}*/
+
 /* Fuente externa*/
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
@@ -68,9 +63,6 @@ body{
 /*Section and article styles*/
 .hero{
     text-align: center;
-        /*min-height: 100vh;
-    max-width: 100%;*/ 
-    /*para evitar q se rompa la imagen a cambiar el tamaño de la pag*/
 }
 .hero img{
     width: 100%;
@@ -153,7 +145,6 @@ body{
     display: flex;
     gap: 15px;
     transition: 0.5s;
-    /*flex-wrap: wrap;*/
 }
 .box img{
     width: 100%;
@@ -256,7 +247,21 @@ form{
         border-radius: 0%;
     }
 
-
+    .box{
+        width: 100%;
+        flex-wrap: wrap;
+        background-color: #f0ec8f;
+    }
+    .box:nth-child(even){
+        background-color: #bbeee0;
+    }
+    .box img{
+        height: 200px;
+    }
+    .box__content{
+        justify-content: left;
+        width: auto;
+    }
     .contact{
         margin: 0%;
         border-radius: 0%;
