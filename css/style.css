@@ -147,7 +147,11 @@ body{
 .box:hover:nth-child(even){
     background-color: #bbeee0;
 }
-
+.nav__link{
+    text-decoration: none;
+    color: #3b3a3d;
+    font-weight: bold;
+}
 /*Galeria*/
 
 .galery_container{
@@ -238,7 +242,5 @@ body{
         margin: 0%;
         border-radius: 0%;
         background-color: #bbeee0;
-        background-attachment: fixed;
-        background-size: cover;
     }
 }
