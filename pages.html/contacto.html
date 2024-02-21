@@ -5,23 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Página principal de Tutú Marambá">
     <meta name="author" content="Julieta A. Crivellari">
+    <!--Link boostrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!--Link css-->
     <link rel="stylesheet" href="../css/style.css">
     <title>Contáctanos</title>
     <link rel="icon" href="../assets/images/favicon_3.ico" type="image/X-icon">
 </head>
 <body>
-    <header  class="header">
-        <img src="../assets/images/logo2.png" alt="Logo de la marca">
-        <a href="../index.html" class="logo">Tutú Maramba</a>
-        <nav>
-            <ul class="nav__list">
-                <li><a href="../index.html" class="nav__link">Inicio</a></li>
-                <li><a href="nosotros.html" class="nav__link">Nosotras</a></li>
-                <li><a href="productos.html" class="nav__link">Productos</a></li>
-                <li><a href="galeria.html" class="nav__link">Galería</a></li>
-                <li><a href="contacto.html" class="nav__link">Contacto</a></li>
-            </ul>
-        </nav>
+    <header>
+        <nav class="navbar sticky-top top-0 navbar-expand-md navbar-grey bg-navbar">
+            <section class="container-fluid">
+              <a class="navbar-brand" href="../index.html">Tutú Marambá</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <article class="offcanvas offcanvas-end bg-navbar" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Tutú Marambá</h5>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="nosotros.html">Nosotras</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="galeria.html">Galería</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                    
+                  </ul>
+                </div>
+              </article>
+            </section>
+          </nav>
     </header>
 
     <main>
@@ -30,40 +56,72 @@
         </section>
 
         <section class="contact">
-            <article class="hero__card">
+              
+              <form class="row g-3">
                 
-                <form>
-                    <p>Si quieres realizar alguna consulta o simplemente dejarnos un comentario por favor llena la siguiente información</p>
+                <div class="col-md-6">
+                    <label for="form-comtrol" class="form-label">Nombres</label>
+                    <input type="text" class="form-control" placeholder="Escriba su nombre" aria-label="First name" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="form-comtrol" class="form-label">Apellido</label>
+                    <input type="text" class="form-control" placeholder="Escriba su apellido" aria-label="Last name" required>
+                </div>
+                
+                <div class="col-md-6">
+                  <label for="inputEmail4" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="inputEmail4" placeholder="Escriba su e-mail" required>
+                </div>
 
-                    <div>
-                        <label for="name">Nombre completo:</label>
-                        <input type="text" name="name" placeholder="Escriba su nombre completo" required>
-                    </div>
-                    <div>
-                        <label for="E-mail">E-mail:</label>
-                        <input type="email" name="E-mail" placeholder="Escriba su email" required>
-                    </div>
-                    <div>
-                        <label for="comment">Deje su mensaje:</label>
-                        <textarea name="comment" cols="30" rows="5" placeholder="Escriba su mensaje"></textarea>
-                    </div>
+                <div class="col-md-6">
+                  <label for="inputAddress" class="form-label">Dirección</label>
+                  <input type="text" class="form-control" id="inputAddress" placeholder="Escriba su dirección" required>
+                </div>
+                
+                <div class="col-md-6">
+                  <label for="inputState" class="form-label">Duración del evento</label>
+                  <select id="inputState" class="form-select">
+                    <option selected>Choose...</option>
+                    <option>3hs (mínimo)</option>
+                    <option>4hs</option>
+                    <option>Más</option>
+                  </select>
+                </div>
 
-                    <div class="buttons">
-                        <input type="submit">
-                        <input type="reset" value="Cancelar">
-                    </div>
-                </form>
+                <div class="col-md-6">
+                  <label for="inputState" class="form-label">Ciudad (donde se realizará el evento)</label>
+                  <select id="inputState" class="form-select">
+                    <option selected>Choose...</option>
+                    <option>Hurlingham, El Palomar, Ramos Mejía, Morón Villa Tesei</option>
+                    <option>Bella Vista, Muñiz, San Miguel</option>
+                    <option>Ituzaingó, Castelar</option>
+                  </select>
+                </div>
+                <div class="mb-3">
+                  <label for="formGroupExampleInput" class="form-label">Mensaje</label>
+                  <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Escriba su mensaje aquí">
+                </div>
 
-                <img src="../assets/images/rainbow.jpg" alt="Arcoiris de madera">
-            </article>
+                <div class="col-12">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">Quiero subscribirme al newsletter</label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn btn-primary">Send</button>
+                </div>
+              </form>
         </section>
 
         
     </main>
     
     <footer id="footer">
-        <p>Ig: @tutumarambajuegos | Tel:1112345678 | E-mail: tutumaramba@gmail.com<br>©Tutú Marambá. Todos los derechos reservados. <br>Julieta A. Crivellari
+        <p><a target="_blank" href="https://www.instagram.com/tutumarambajuegos/"><img src="../assets/images/icon-ig.png" alt="icono de istagram"></a> | Tel:011 12345678 | E-mail: tutumaramba@gmail.com<br>©Tutú Marambá. Todos los derechos reservados. <br>Julieta A. Crivellari
         </p>
     </footer>
+    <!--Link script-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

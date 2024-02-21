@@ -1,10 +1,3 @@
-/*Reset*/
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
 /* Fuente externa*/
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
@@ -17,48 +10,9 @@ body{
 }
 
 /*header and nav styles*/
-.header{
-    padding: 10px;
-    background-color: #ADF5E2;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid #fffbf2;
-    position: sticky;
-    top: 0;
+.bg-navbar{
+    background-color: #BFDACA;
 }
-.logo{
-
-    color: #3b3a3d;
-    text-decoration: none;
-    list-style: none;
-    font-size: 30px;
-    font-style: italic;
-    font-weight: bold;
-}
-
-.header img{
-    width: 50px;
-}
-
-.nav__list{
-    list-style: none;
-    display: flex;
-    gap: 15px;
-    align-items: center;
-
-}
-.nav__link{
-    text-decoration: none; /*para sacarle el aspecto standar de link*/
-    color: #3b3a3d;
-    font-weight: bold;
-}
-.nav__list a:hover{
-    color: #fffbf2;
-    transition: 0.2s;
-    font-size: 20px; 
-}
-
 
 /*Section and article styles*/
 .hero{
@@ -83,23 +37,36 @@ body{
     font-size: large;
     padding: 10px;
     margin: 10px;
+    border-bottom: 1px solid #BFDACA;
 }
 
 .container{
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-    justify-content: space-evenly;
+    justify-content: space-around;
     padding: 10px;
-    margin: 70px 10px;
+    margin: 70px;
 }
 .line__container{
     text-align: center;
     width: 300px;
     padding: 5px;
+    transition: 0.5s;
 }
 .line__container p{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    font-weight: bold;
     padding: 10px;
+}
+
+.line__container:hover{
+    border-radius: 2%;
+    background-color: #f0ec8f;
+}
+.line__container:hover:nth-child(even){
+    background-color: #bbeee0;
 }
 
 /*about us*/
@@ -117,6 +84,9 @@ body{
     border-radius: 5%;
 }
 .hero__card__content{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    font-weight: bold;
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -139,6 +109,7 @@ body{
 
 .box{
     width: 90%;
+    border-radius: 1%;
     background-color: #fffbf2;
     justify-content: center;
     padding: 20px;
@@ -147,6 +118,7 @@ body{
     transition: 0.5s;
 }
 .box img{
+    border-radius: 1%;
     width: 100%;
     height: 400px;
     object-fit: cover;
@@ -196,42 +168,42 @@ body{
 
 /*contacto*/
 .contact{
-    background-color: #bbeee0;
+    background-color: #f0ec8f;
     width: fit-content;
-    margin: 50px;
+    margin: 20px;
+    padding: 20px;
     font-weight: bold;
-    border-radius: 5%;
+    border-radius: 1%;
 }
 
-form{
-    padding: 30px;
-    color: #3b3a3d;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.btn-primary{
+    background-color: #3b3a3d;
+    border: 2px solid transparent;
 }
-.contact div{
-    margin: 20px 10px;
-}
-
-.buttons{
-    padding: 10px;
-    text-align: end;
+.btn-primary:hover{
+    background-color: #f0ec8f;
+    color:#3b3a3d;
+    border: 2px solid #3b3a3d;
 }
 
 
 /*footer styles*/
 #footer{
-    background-color:#ADF5E2;
+    background-color:#BFDACA;
     color: #242325;
     text-align: center;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
     padding: 20px;
     margin-top: 20px;
 }
 
+::selection{
+    background-color:#bbeee0;
+}
+
 @media(max-width:380px){
-    .header, .nav__list, .hero__card{
+    .header, .hero__card{
         flex-direction: column;
         justify-content: center;
         align-items: center;
