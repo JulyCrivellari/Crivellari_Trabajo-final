@@ -17,6 +17,14 @@ body{
 /*Section and article styles*/
 .hero{
     text-align: center;
+    background: linear-gradient(125deg, #bbeee0, #BFDACA);
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 5%;
+    transition: background-size 0.5s;
+}
+.hero:hover{
+    background-size: 100% 5%;
 }
 .hero img{
     width: 100%;
@@ -37,7 +45,6 @@ body{
     font-size: large;
     padding: 10px;
     margin: 10px;
-    border-bottom: 1px solid #BFDACA;
 }
 
 .container{
