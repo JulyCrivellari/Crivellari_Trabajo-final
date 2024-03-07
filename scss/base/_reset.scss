@@ -1,0 +1,16 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Pacifico";
+    font-display: swap;
+    background-color: $back__color;
+    color: $font__color;
+}
+
+::selection{
+    background-color:$font__color;
+}

@@ -1,0 +1,42 @@
+@media(max-width:380px){
+    .hero__card{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .hero__card img{
+        width: 100%;
+        object-fit: cover;
+        border-radius: 0%;
+    }
+    .container, .hero, .hero__container{
+        margin: 0;
+    }
+    
+    .hero h3{
+        padding: 10px;
+    }
+
+    .box{
+        width: 100%;
+        flex-wrap: wrap;
+        background-color: $hover__1;
+    }
+    .box:nth-child(even){
+        background-color: $hover__2;
+    }
+    .box img{
+        height: 200px;
+    }
+    .box__content{
+        justify-content: left;
+        width: auto;
+    }
+    .contact{
+        margin: 0%;
+        border-radius: 0%;
+        background-color: $hover__2;
+    }
+}

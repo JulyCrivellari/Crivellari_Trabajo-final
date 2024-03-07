@@ -1,0 +1,24 @@
+.hero__container{
+    margin: 30px;
+}
+.hero__card{
+    display: flex;
+    flex-direction: column;
+}
+.hero__card img{
+    min-width: 40%;
+    max-width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 5%;
+}
+.hero__card__content{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: space-between;
+}

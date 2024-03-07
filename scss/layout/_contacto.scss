@@ -1,0 +1,19 @@
+.contact{
+    background-color: $hover__1;
+    width: fit-content;
+    margin: 20px;
+    padding: 20px;
+    font-weight: bold;
+    border-radius: 1%;
+}
+
+.btn-primary{
+    background-color: $font__color
+;
+    border: 2px solid transparent;
+}
+.btn-primary:hover{
+    background-color: $hover__1;
+    color:$font__color;
+    border: 2px solid $font__color;
+}
