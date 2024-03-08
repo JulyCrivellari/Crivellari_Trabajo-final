@@ -35,7 +35,11 @@ body {
 /* Fuente externa*/
 /*layout*/
 .hero h1 {
-  margin: 20px;
+  font-family: "Pacifico";
+  font-style: italic;
+  font-size: 50px;
+  padding: 30px;
+  margin: 30px;
   text-align: center;
   background: linear-gradient(125deg, #bbeee0, #BFDACA);
   background-position: 50% 100%;
@@ -43,30 +47,18 @@ body {
   background-size: 0% 5%;
   transition: background-size 0.5s;
 }
-
 .hero h1:hover {
   background-size: 100% 5%;
 }
-
 .hero h3 {
   text-align: center;
 }
-
 .hero img {
   width: 100%;
   height: 350px;
   object-fit: cover;
   overflow: hidden;
 }
-
-.hero h1 {
-  font-family: "Pacifico";
-  font-style: italic;
-  font-size: 50px;
-  padding: 30px;
-  margin: 30px;
-}
-
 .hero p {
   font-family: "Pacifico";
   font-size: large;
@@ -89,19 +81,16 @@ body {
   padding: 5px;
   transition: 0.5s;
 }
-
 .line__container p {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-style: italic;
   font-weight: bold;
   padding: 10px;
 }
-
 .line__container:hover {
   border-radius: 2%;
   background-color: #f0ec8f;
 }
-
 .line__container:hover:nth-child(even) {
   background-color: #bbeee0;
 }
@@ -114,7 +103,6 @@ body {
   display: flex;
   flex-direction: column;
 }
-
 .hero__card img {
   min-width: 40%;
   max-width: 100%;
@@ -122,7 +110,6 @@ body {
   object-fit: cover;
   border-radius: 5%;
 }
-
 .hero__card__content {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-style: italic;
@@ -154,14 +141,12 @@ body {
   gap: 15px;
   transition: 0.5s;
 }
-
 .box img {
   border-radius: 1%;
   width: 100%;
   height: 400px;
   object-fit: cover;
 }
-
 .box__content {
   display: flex;
   flex-direction: column;
@@ -169,7 +154,6 @@ body {
   gap: 10px;
   width: 50%;
 }
-
 .box__content ul {
   display: flex;
   gap: 10px;
@@ -177,17 +161,14 @@ body {
   justify-content: center;
   padding: 15px;
 }
-
 .box:hover {
   background-color: #f0ec8f;
 }
-
-.box:nth-child(even) {
-  flex-direction: row-reverse;
-}
-
 .box:hover:nth-child(even) {
   background-color: #bbeee0;
+}
+.box:nth-child(even) {
+  flex-direction: row-reverse;
 }
 
 .nav__link {
@@ -205,8 +186,7 @@ body {
   grid-auto-rows: minmax(300px, auto);
   grid-template-areas: dense;
 }
-
-.galery_container img, video {
+.galery_container img, .galery_container video {
   width: 100%;
   height: 300px;
   object-fit: cover;
@@ -225,7 +205,6 @@ body {
   background-color: #3b3a3d;
   border: 2px solid transparent;
 }
-
 .btn-primary:hover {
   background-color: #f0ec8f;
   color: #3b3a3d;

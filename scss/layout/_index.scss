@@ -1,39 +1,41 @@
-.hero h1{
-    margin: 20px;
-    text-align: center;
-    background: linear-gradient(125deg, $hover__2
-, $nav__color);
-    background-position: 50% 100%;
-    background-repeat: no-repeat;
-    background-size: 0% 5%;
-    transition: background-size 0.5s;
-}
-.hero h1:hover{
-    background-size: 100% 5%;
-}
-.hero h3{
-    text-align: center;
-}
-.hero img{
-    width: 100%;
-    height: 350px;
-    object-fit: cover;
-    overflow: hidden;
+.hero{
+    h1{
+        font-family: "Pacifico";
+        font-style: italic;
+        font-size: 50px;
+        padding: 30px;
+        margin: 30px;
+        text-align: center;
+        background: linear-gradient(125deg, $hover__2, $nav__color);
+        background-position: 50% 100%;
+        background-repeat: no-repeat;
+        background-size: 0% 5%;
+        transition: background-size 0.5s;
 
-}
-.hero h1{
-    font-family: "Pacifico";
-    font-style: italic;
-    font-size: 50px;
-    padding: 30px;
-    margin: 30px;
+        &:hover{
+            background-size: 100% 5%;
+        }
+    }
+
+    h3{
+        text-align: center;
+    }
+    img{
+        width: 100%;
+        height: 350px;
+        object-fit: cover;
+        overflow: hidden;
+    
+    }
+
+    p{
+        font-family: "Pacifico";
+        font-size: large;
+        padding: 10px;
+        margin: 10px;
+    }
 } 
-.hero p{
-    font-family: "Pacifico";
-    font-size: large;
-    padding: 10px;
-    margin: 10px;
-}
+
 
 .container{
     display: flex;
@@ -48,22 +50,19 @@
     width: 300px;
     padding: 5px;
     transition: 0.5s;
-}
-.line__container p{
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-style: italic;
-    font-weight: bold;
-    padding: 10px;
-}
 
-.line__container:hover{
-    border-radius: 2%;
-    background-color: $hover__1;
+    p{
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-style: italic;
+        font-weight: bold;
+        padding: 10px;
+    }
+    &:hover{
+        border-radius: 2%;
+        background-color: $hover__1;
+
+        &:nth-child(even){
+            background-color: $hover__2;
+        }
+    }
 }
-.line__container:hover:nth-child(even){
-    background-color: $hover__2
-;
-}
-
-
-
